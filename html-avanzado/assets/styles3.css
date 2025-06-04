@@ -1,0 +1,21 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #8dd6ecb7, #3661ec9f)
+}
+
+main, aside {
+    display: inline-block;
+}
+
+aside {
+    position: fixed;
+    margin: 50px;
+    font-size: 24px;
+    background-color: #7c87eb8e;
+    border-right: 5px solid #2f00ff;
+    border-radius: 4px;
+    padding: 8px
+}
