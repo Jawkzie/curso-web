@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Básico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+                <!--TITULO Y PÁRRAFO -->
+    <div class="header"> 
+    <h1 class="h1-title">CSS BÁSICO</h1>
+        <p>Esto es un archivo de documento de HTML Básico en donde se estarán realizando practicas de CSS.</p>
+    </div>
+
+                <!-- LISTAS -->
+        <div class="unordered-list"> 
+            <h2 class="subtitle">Lista desorganizada</h2>
+                <p>En esta lista desorganizada (unordered list) se usan estilos como las viñetas en vez de los números. </p>
+                    <ul> TITULO
+                        <li>ITEM 1</li>
+                        <li>ITEM 2</li>
+                        <li>ITEM 3</li>
+                    </ul>
+        </div>
+        <div class="ordered-list"> 
+            <h2 class="subtitle">Lista organizada</h2>
+                <p>En esta lista organizada (ordered list) se usan los números para organizar los diferentes elementos. </p>
+                    <ol> TITULO
+                        <li>ITEM 1</li>
+                        <li>ITEM 2</li>
+                        <li>ITEM 3</li>
+                    </ol>
+        </div>
+                <!-- ENLACES (BÁSICO) -->
+        <div class="card"> 
+            <h2 class="subtitle">Enlaces básicos</h2>
+                <p>En esta sección se estarán viendo los enlaces (básicos) en HTML. </p>
+                    <a href="https://google.com">Ir a Google</a>
+                    <a href="https://youtube.com">Ir a Youtube</a>
+                    <a href="https://roblox.com">Ir a Roblox</a>
+                <p>Para que se vea mejor visualmente, se pueden implementar estos enlaces en listas. Ejemplo, </p>
+                    <ul>
+                        <li><a href="https://google.com">Ir a Google</a></li>
+                        <li><a href="https://youtube.com">Ir a Youtube</a></li>
+                        <li><a href="https://roblox.com">Ir a Roblox</a></li>
+                    </ul>
+        </div>
+                <!-- IMAGENES Y RUTAS -->
+        <div class="card image"> 
+            <h2 class="subtitle">IMAGENES</h2>
+                <p>En esta sección se estaran viendo las imágenes. </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="La noche estrellada">
+                    <figcaption>Esto es una imagen con una ruta de Google. </figcaption>
+                
+                <!-- ESTO ES UN EJEMPLO DE UNA IMAGEN CON UNA RUTA DE ACCESO -->
+                    <img src="assets/wallpaper.png" alt="Wallpaper">
+                    <figcaption>Esto es una imagen con una ruta LOCAL. </figcaption>
+        </div>
+                <!-- FORMULARIOS (BÁSICO) -->
+        <div class="card forms"> 
+            <h2 class="subtitle">Formularios</h2>
+                <p>En esta sección se estaran viendo los formularios en HTML. </p>
+                    <form>
+                        <input type="text" placeholder="Nombres">
+                        <input type="text" placeholder="Apellidos">
+                        <input type="email" placeholder="example@gmail.com">
+                        <input type="tel" placeholder="Número de teléfono">
+                        <input type="date">
+                        <input type="number" placeholder="Edad" min="18" max="110" required>
+                        <input type="submit" placeholder="Enviar">
+                    </form>
+</body>
+</html>
