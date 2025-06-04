@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas / Audio y Video </title>
+    <link rel="stylesheet" href="assets/styles2.css">
+</head>
+<body>
+
+        <!-- TABLAS -->
+    <h2>TABLAS</h2>
+    <table>
+        <thead>
+            <th>Producto</th>
+            <th>Costo</th>
+            <th>Unidades</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Banana</td>
+                <td>$3</td>
+                <td>1 KG</td>
+            </tr>
+            <tr>
+                <td>Manzana</td>
+                <td>$2</td>
+                <td>1 KG</td>
+            </tr>
+            <tr>
+                <td>Melon</td>
+                <td>$4</td>
+                <td>1 Unidad</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="header-total">Total</th>
+                <td colspan="2" class="dato-total">$9</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- AUDIO Y VIDEO -->
+    <h2>AUDIO Y VIDEO</h2>
+    <p>En este apartado de esta pagina se estaran viendo las etiquetas y los atributos de <code>&lt;video&gt;</code> y <code>&lt;audio&gt;</code> y tambien sus atributos.</p>
+    <h3>Atributos</h3>
+    <ul> 
+        <li> <code>&lt;autoplay&gt;</code> funciona para que el navegador cargue el video automaticamente, pero no por completo, para eso se usa muted. <br>
+        <li> <code>&lt;muted&gt;</code> se utiliza junto al autoplay para que el navegador lo reproduzca en su totalidad y el usuario le suba el volumen. <br>
+        <li> <code>&lt;loop&gt;</code> por si se quiere reproducir el video en bucle. <br>
+        <li> <code>&lt;controls&gt;</code> para mostrar controles basicos en pantalla. <br>
+        <li> <code>&lt;poster&gt;</code> para poner una imagen de previsualizacion o miniatura.
+    </ul>
+    <h2>LAZY LOADING</h2>
+    <p>El lazy loading es un atributo que se le pone a los elementos que usualmente deben cargar, pueden ser tipo media, por ejemplo (imagenes / videos / audios) y este funciona para que los archivos carguen cuando el usuario los este viendo, mientras que si no se ven en pantalla no se carguen, funciona para una mejor optimizacion de la pagina, para que cargue mas rapido. Aunque este atributo tiene algunos errores y puede no mostrarle los elementos a los usuarios. <strong>SOLO FUNCIONA EN ETIQUETAS <code>&lt;img&gt;</code></strong></p>
+    <div class="video-audio"> 
+        <video src="assets/d4vd - Romantic Homicide.mp4" type="video/mp4" autoplay muted loop controls poster="assets/icon.png">
+            Tu navegador no soporta el video.
+        </video>
+
+        <audio src="assets/d4vd - Romantic Homicide.mp3" type="audio/mpeg" controls>
+            Tu navegador no soporta el archivo de audio.
+        </audio>
+    </div>
+</body>
+</html>
